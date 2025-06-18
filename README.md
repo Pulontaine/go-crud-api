@@ -21,7 +21,7 @@ git clone https://github.com/Pulontaine/go-crud-api"
 ```bash
 docker-compose up --build
 ```
-API будет доступен по адресу: http://localhost:8000
+API будет доступен по адресу: http://localhost:8000. 
 База данных будет доступна на порту 5433 на хост-машине.
 
 ## Примеры HTTP-запросов
@@ -49,7 +49,7 @@ GET /users
 GET /users/1
 ```
 
-### 4. Обноваление пользователя
+### 4. Обновление пользователя
 ```bash
 PUT /users/1
 Content-Type: application/json
