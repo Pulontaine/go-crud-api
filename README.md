@@ -14,7 +14,7 @@
 ### 1. Клонируйте репозиторий
 
 ```bash
-git clone https://github.com/Pulontaine/go-crud-api"
+git clone https://github.com/Pulontaine/go-crud-api
 ```
 
 ### 2. Запустите проект через Docker
