@@ -2,12 +2,12 @@ FROM golang:1.24-alpine
 
 WORKDIR /app
 
-COPY . .
+COPY go.mod ./
+COPY go.sum ./
+RUN go mod download
 
-RUN go get -d -v ./...
-
-RUN go build -o api .
+COPY . ./
+RUN go build -o server ./cmd/server
 
 EXPOSE 8000
-
-CMD ["./api"]
+CMD ["./server"]
